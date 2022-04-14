@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LivraisonApp.Accueil">
+    
+    <ContentPage.Content>
+   
+        <StackLayout>
+            
+
+                <Label Text="Bienvenue sur votre plateform de livraison"
+                   FontSize="Body"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                  
+                   />
+            <BoxView 
+                     
+                     x:Name="FadeBox" 
+                     InputTransparent="True"
+                     Grid.RowSpan="2"
+                     Opacity="0"
+                     Color="red"/>
+
+
+
+            <StackLayout>
+                <Button Text="Start" Clicked="Button_Clicked"/>
+               
+            </StackLayout>
+
+            
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
